@@ -1,0 +1,53 @@
+/* Shared, dependency-free styles for Simple Apps. */
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  color: #243247;
+  background: #f7f9fc;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+* { box-sizing: border-box; }
+body { margin: 0; overflow-wrap: anywhere; }
+a { color: #205ca0; text-underline-offset: .24em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #205ca0; outline-offset: 5px; }
+.site-header, main, .site-footer { width: min(100% - 48px, 760px); margin-inline: auto; }
+.site-header { padding-block: 24px; border-bottom: 1px solid #dce3ec; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 1.125rem; font-weight: 700; color: #243247; text-decoration: none; }
+.site-header span, .muted { color: #56667b; }
+.site-header span { font-size: .875rem; }
+main { padding-block: 52px 60px; min-height: 65vh; }
+.intro { margin-bottom: 40px; }
+.eyebrow { font-size: .875rem; font-weight: 700; letter-spacing: .12em; color: #205ca0; margin: 0 0 10px; }
+h1 { font-size: clamp(2rem, 5vw, 2.75rem); line-height: 1.35; letter-spacing: -.025em; margin: 0 0 24px; }
+.title-detail { display: block; font-size: .62em; letter-spacing: 0; margin-top: 12px; line-height: 1.6; }
+h2 { font-size: 1.25rem; line-height: 1.6; margin: 0 0 16px; }
+p { margin: 0 0 16px; }
+p:last-child { margin-bottom: 0; }
+.lead { font-size: 1.125rem; }
+section { margin-top: 36px; }
+.app-card { padding: 32px; background: #fff; border: 1px solid #dce3ec; border-top: 3px solid #205ca0; border-radius: 12px; }
+.app-card h2 { font-size: 1.75rem; }
+.button-link { display: inline-block; margin-top: 12px; padding: 10px 20px; background: #205ca0; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.button-link:hover { background: #184b84; }
+.upcoming { margin-top: 28px; font-size: .9375rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; }
+.tags li { padding: 4px 16px; border: 1px solid #dce3ec; background: #fff; border-radius: 6px; }
+.features { padding-left: 1.5em; }
+.features li { padding-block: 4px; }
+.faq { margin: 0; }
+.faq dt { border-top: 1px solid #dce3ec; padding-top: 20px; font-weight: 600; }
+.faq dd { margin: 8px 0 20px; }
+.contact-placeholder { padding: 14px 18px; border: 1px dashed #8a6a2d; border-radius: 6px; background: #fff9ec; color: #624719; }
+.contact-placeholder code { font-size: .9375rem; }
+.page-links { margin-top: 40px; padding-top: 24px; border-top: 1px solid #dce3ec; }
+.page-links a, .site-footer a { display: inline-block; padding-block: 8px; }
+.site-footer { border-top: 1px solid #dce3ec; padding-block: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: .875rem; color: #56667b; }
+.skip-link { position: absolute; top: 8px; left: 8px; padding: 8px 16px; background: #fff; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 480px) {
+  .site-header, main, .site-footer { width: calc(100% - 40px); }
+  main { padding-block: 36px 44px; }
+  .app-card { padding: 24px; }
+}
