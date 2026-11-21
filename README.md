@@ -1,6 +1,6 @@
 # Simple Apps サポートサイト
 
-Simple AppsのiOSアプリ向けサポート・プライバシー情報を掲載する静的サイトです。現在はSimpleRecordを掲載しています。
+Simple AppsのiOSアプリ向けサポート・プライバシー情報を掲載する静的サイトです。現在はSimpleRecord、SimpleWalk、SimplePay、SimpleSurfRideを掲載しています。
 
 GitHub Pagesで `main` ブランチの `/(root)` から配信する想定です。HTMLとCSSのみで動作し、ビルドや外部依存はありません。リンクはプロジェクトサイト `/simple-apps-support/` に対応する相対パスです。
 
@@ -8,6 +8,12 @@ GitHub Pagesで `main` ブランチの `/(root)` から配信する想定です�
 - `styles.css`：共通スタイル
 - `simplerecord/index.html`：機能・FAQ・お問い合わせ
 - `simplerecord/privacy.html`：プライバシーポリシー
+- `simplewalk/index.html`：サポート
+- `simplewalk/privacy.html`：プライバシーポリシー
+- `simplepay/index.html`：サポート
+- `simplepay/privacy.html`：プライバシーポリシー
+- `simplesurfride/index.html`：サポート
+- `simplesurfride/privacy.html`：プライバシーポリシー
 
 ## 公開前の確認
 
